@@ -1,0 +1,18 @@
+<div class="container-fluid">
+<h1>interpolation vs property biding</h1>
+<form  class="container-fluid">
+<input type="text" value="{{title}}" disabled="{{dis}}">
+<br><br>
+<input type="text" [value]="menu" [disabled]="dis">
+</form>
+<hr>
+<br><br>
+<h1 [style.color]="color"   [style.backgroundColor]="bgcolor" >  style biding</h1>
+
+<button (click)="colorchange()">change</button>
+
+<br><hr><br>
+
+<p>{{child}}
+</p>
+</div>

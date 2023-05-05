@@ -1,0 +1,9 @@
+.head1 a{
+    text-decoration: none;
+    
+}
+
+.head1 li{
+    margin: 0 13px;
+    list-style-type: none;
+}

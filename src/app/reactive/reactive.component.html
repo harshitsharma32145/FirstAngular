@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>REACTIVE FORM</h1>
+    <form [formGroup]="reactiveform" (ngSubmit)="login(reactiveform)">
+        <input type="text" formControlName="user">
+        <br>
+        <span *ngIf="user&&user.invalid&&user.touched" style="color:red">enter your name</span><br>
+        <input type="email" formControlName="email">
+        <br>
+        <span *ngIf="email&&email.invalid&&email.touched" style="color:red">invalid email</span><br>
+        <button type="submit">login</button>
+    </form>
+    <h1>{{reactiveform.value.user}} </h1><br>
+    <hr><br><br>
+</div>    
+<div>
+    <a routerLink="form">open form</a>
+    <router-outlet></router-outlet>
+</div>

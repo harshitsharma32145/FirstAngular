@@ -1,0 +1,62 @@
+<app-header></app-header>
+
+<router-outlet ></router-outlet> 
+
+<app-new (arry)="parent($event)"></app-new>
+<!-- {{val|json}}  -->
+
+<!-- <app-new [data]="parent_data" ></app-new> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <input type="text"  [(ngModel)]="name"> -->
+
+<!-- <app-son [child]="val1"></app-son> -->
+<!-- <app-user-list1 (childmess)="parentfunc($event)"></app-user-list1> -->
+<!-- <p>{{message}}</p> -->
+<!-- <app-son (son_mess)="parent_data($event)"></app-son> -->
+<!-- <p>{{parent}}</p> -->
+<!-- <app-son2 (son2)="parent_fun($event)"></app-son2> -->
+<!-- <h5>{{parent}}</h5> -->
+
+<!--<app-child (abc)='abc($event)'></app-child>
+{{str}}
+<br>
+<h1><input type="text" placeholder="enter your name"></h1>
+
+    <form #loginform="ngForm" (ngSubmit)="getdata(loginform.value)">
+        <input type="text" placeholder="enter your name" name="name">
+        <br><br>
+        <input type="password" placeholder="password" name="password" ngModel>
+        <br><br>
+        <input type="email" placeholder="email" name="email" ngModel>
+        <br><br>
+        <button type="submit">login</button>
+        <br><br>
+        <button type="reset">reset</button>
+
+    </form>
+</div>
+<div>
+    <h1>{{title2}}</h1>
+    <form [formGroup]="signup" (ngSubmit)="sign_up(signup)">
+        <input type="name" placeholder="name" formControlerName="harshit">
+        <br><br>
+        <input type="password" placeholder="password" formControlerName="password">
+        <br><br>
+        <button type="submit">sign up</button>
+    </form>
+</div>-->

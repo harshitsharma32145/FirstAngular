@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <br><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of data ; let i=index">
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.weight}}</td>
+                <td>{{item.symbol}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

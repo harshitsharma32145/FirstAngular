@@ -1,0 +1,9 @@
+<div class="container">
+<h4>{{title}}</h4>
+<button (click)="toggle()">toggle</button>
+<h4 *ngIf="disable">hello dosto!!</h4>
+<br><hr><br>
+<h1>{{title2}} : #box</h1>
+<input type="text" placeholder="name" #box>
+<button (click)="getval(box.value)">warn</button>
+</div>

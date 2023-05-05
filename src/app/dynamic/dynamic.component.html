@@ -1,0 +1,20 @@
+
+<div class="container">
+    <form #login="ngForm" (ngSubmit)="getval(login.value)">
+        <input type="text" required #name="ngModel" name="name" placeholder="name" ngModel>
+        <br>
+        <span *ngIf="name.invalid && name.touched" tyle="color:red">enter your name</span>
+        <br>
+        <input type="password" required #password="ngModel" name="password"placeholder="password" ngModel>
+        <br>
+        <span *ngIf="password.invalid&&password.touched" style="color:red">enter your password</span>
+        <br>
+        <button [disabled]="login.invalid" style="color:rgb(99, 0, 0);background-color: aqua;">login</button>
+    </form>
+</div>
+<div class="container">
+    <a routerLink="new">new</a>
+   
+    <router-outlet></router-outlet>
+
+</div>

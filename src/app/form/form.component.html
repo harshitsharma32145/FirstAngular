@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>VALIDATORS IN REACTIVE FORM</h1>
+<form [formGroup]="useForm" (ngSubmit)="clickMe()">
+    <input type="text" placeholder="enter name"  formControlName="user" minlength="4">
+    <br>
+    <span style="color : green;" *ngIf="user && user.invalid && user.touched"> please enter some value</span>
+    <br><br>
+    <input type="number" placeholder="enter email" required  formControlName="number " (keypress)="enotvalid($event)">
+    <br>
+    <span style="color : green;" *ngIf="number&&number.invalid && number.touched"> Invalid </span> 
+    <br>
+    <button class="btn btn-primary" type="submit" [disabled]="useForm.invalid"> submit </button>
+</form>
+</div>
+
+
